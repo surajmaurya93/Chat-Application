@@ -49,7 +49,7 @@ const Signup = () => {
         <form onSubmit={onSubmitHandler} action="">
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Full Name</span>
+              <span className='label-text text-white'>Full Name</span>
             </label>
             <input
               value={user.fullName}
@@ -60,7 +60,7 @@ const Signup = () => {
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Username</span>
+              <span className='text-white label-text'>Username</span>
             </label>
             <input
               value={user.username}
@@ -71,7 +71,7 @@ const Signup = () => {
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Password</span>
+              <span className='text-white label-text'>Password</span>
             </label>
             <input
               value={user.password}
@@ -82,7 +82,7 @@ const Signup = () => {
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Confirm Password</span>
+              <span className='text-white label-text'>Confirm Password</span>
             </label>
             <input
               value={user.confirmPassword}
@@ -93,7 +93,7 @@ const Signup = () => {
           </div>
           <div className='flex items-center my-4'>
             <div className='flex items-center'>
-              <p>Male</p>
+              <p className='text-white'>Male</p>
               <input
                 type="checkbox"
                 checked={user.gender === "male"}
@@ -102,7 +102,7 @@ const Signup = () => {
                 className="checkbox mx-2" />
             </div>
             <div className='flex items-center'>
-              <p>Female</p>
+              <p className='text-white'>Female</p>
               <input
                 type="checkbox"
                 checked={user.gender === "female"}
@@ -111,7 +111,7 @@ const Signup = () => {
                 className="checkbox mx-2" />
             </div>
           </div>
-          <p className='text-center my-2'>Already have an account? <Link to="/login"> login </Link></p>
+          <p className='text-center text-white my-2'>Already have an account? <Link to="/login"> login </Link></p>
           <div>
             <button type='submit' className='btn btn-block btn-sm mt-2 border border-slate-700'>Singup</button>
           </div>

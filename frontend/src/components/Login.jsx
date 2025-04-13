@@ -24,6 +24,7 @@ const Login = () => {
         withCredentials: true
       });
       navigate("/");
+      toast.success("Logged in successfull");
       console.log(res);
       dispatch(setAuthUser(res.data));
     } catch (error) {
@@ -43,7 +44,7 @@ const Login = () => {
 
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Username</span>
+              <span className='text-white label-text'>Username</span>
             </label>
             <input
               value={user.username}
@@ -54,7 +55,7 @@ const Login = () => {
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Password</span>
+              <span className='text-white label-text'>Password</span>
             </label>
             <input
               value={user.password}
@@ -63,7 +64,7 @@ const Login = () => {
               type="password"
               placeholder='Password' />
           </div>
-          <p className='text-center my-2'>Don't have an account? <Link to="/signup"> signup </Link></p>
+          <p className='text-white text-center my-2'>Don't have an account? <Link to="/signup"> signup </Link></p>
           <div>
             <button type="submit" className='btn btn-block btn-sm mt-2 border border-slate-700'>Login</button>
           </div>
